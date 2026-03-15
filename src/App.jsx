@@ -1,21 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './component/navbar.jsx'
-import Footer from './component/footer.jsx'
+import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Products from './components/Products'
+import WhyUs from './components/WhyUs'
+import Testimonial from './components/Testimonial'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
+    <div className="min-h-screen font-body">
       <Navbar />
-      <main className="max-w-6xl mx-auto p-6">
-        <p className="text-2xl font-bold text-blue-500 bg-amber-100">hello</p>
-      </main>
+      <Hero />
+      <About />
+      <Products />
+      <WhyUs />
+      <Testimonial />
+      <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
-
-export default App
