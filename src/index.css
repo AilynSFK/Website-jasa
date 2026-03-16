@@ -1,15 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-peach-50: #FDEDE3;
+  --color-peach-100: #F9C9A8;
+  --color-peach-200: #F4A46A;
+  --color-peach-300: #E07A3A;
+  --color-cream: #FFF8F2;
+  --color-brand-dark: #3A2010;
+  --color-brand-mid: #7A4520;
+  --color-brand-text: #5A3015;
+  --color-brand-muted: #C49070;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'DM Sans', sans-serif;
-    background-color: #FFF8F2;
-    color: #5A3015;
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-brand-text);
   }
 }
 

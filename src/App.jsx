@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
-import Products from './components/Products'
-import WhyUs from './components/WhyUs'
-import Testimonial from './components/Testimonial'
-import Contact from './components/Contact'
+import About from './components/about'
+import Products from './components/product'
+import WhyUs from './components/whyUs'
+import Testimonial from './components/testimonial'
+import Contact from './components/contact'
 import Footer from './components/Footer'
 
 export default function App() {
